@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      color: #1e2a38;
+      padding: 20px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #d4a373;
+      font-weight: bold;
+    }
+    form {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+    input, textarea {
+      width: 95%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #d4a373;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #b87c50;
+    }
+  </style>
+</head>
+<body>
+<center>
+  <nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'personal_info' %}">Personal Info</a>
+    <a href="{% url 'description' %}">About Me</a>
+    <a href="{% url 'contact' %}">Contact</a>
+  </nav>
+
+  <h1>Contact Me</h1>
+  <form method="post">
+    <label>Email:</label>
+    <input type="email" name="email" value="ahmadyasin075@gmail.com" required>
+
+    <label>Phone:</label>
+    <input type="text" name="phone" value="0772 770 3879" required>
+
+    <label>Leave a Message:</label>
+    <textarea name="message" rows="4"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</center>
+</body>
+</html>

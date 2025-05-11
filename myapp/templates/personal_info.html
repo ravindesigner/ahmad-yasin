@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Information</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f8;
+      color: #1e2a38;
+      padding: 20px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #d4a373;
+      font-weight: bold;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #fff;
+      padding: 10px 15px;
+      margin-bottom: 8px;
+      border-left: 5px solid #d4a373;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+<center>
+  <nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'personal_info' %}">Personal Info</a>
+    <a href="{% url 'description' %}">About Me</a>
+    <a href="{% url 'contact' %}">Contact</a>
+  </nav>
+
+  <h1>Personal Information</h1>
+  <ul>
+    <li><strong>Name:</strong> Ahmad Yasin</li>
+    <li><strong>Age:</strong> 23 years old</li>
+    <li><strong>Location:</strong> Sulaimani, Iraq</li>
+    <li><strong>Email:</strong> ahmadyasin075@gmail.com</li>
+    <li><strong>Phone:</strong> 0772 770 3879</li>
+    <li><strong>Date of Birth:</strong> 3 - 12 - 2001</li>
+    <li><strong>Education:</strong> University of Sulaimani, College of Science, Computer Science Department</li>
+  </ul>
+</center>
+</body>
+</html>

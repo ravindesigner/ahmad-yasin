@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Ahmad</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f8;
+      color: #1e2a38;
+      padding: 20px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #d4a373;
+      font-weight: bold;
+    }
+    img {
+      border-radius: 50%;
+      width: 160px;
+      border: 4px solid #d4a373;
+      margin-top: 20px;
+    }
+    h1, h2 {
+      color: #1e2a38;
+    }
+  </style>
+</head>
+<body>
+<center>
+  <nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'personal_info' %}">Personal Info</a>
+    <a href="{% url 'description' %}">About Me</a>
+    <a href="{% url 'contact' %}">Contact</a>
+  </nav>
+
+  <h1>Welcome to Ahmad Yasin's Portfolio</h1>
+  <img src="https://i.ibb.co/0kVJ25V/5e1ffd7b-c3af-4335-a8f9-e08febf9e561.jpg" alt="Ahmad Yasin">
+  <h2>Computer Science Student & Tech Enthusiast</h2>
+</center>
+</body>
+</html>

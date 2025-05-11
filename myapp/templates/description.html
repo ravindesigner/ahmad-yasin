@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf5;
+      color: #1e2a38;
+      padding: 20px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #d4a373;
+      font-weight: bold;
+    }
+    p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+<center>
+  <nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'personal_info' %}">Personal Info</a>
+    <a href="{% url 'description' %}">About Me</a>
+    <a href="{% url 'contact' %}">Contact</a>
+  </nav>
+
+  <h1>About Me</h1>
+  <p>
+    I am Ahmad Yasin, a passionate computer science student at the University of Sulaimani. 
+    I have a background in retail and customer service and have developed strong teamwork, 
+    communication, and technical skills. I’m always eager to explore new technologies and improve 
+    my proficiency in tools like Microsoft Office, programming logic, and problem-solving. 
+    I enjoy combining my technical knowledge with creativity to grow professionally.
+  </p>
+</center>
+</body>
+</html>
